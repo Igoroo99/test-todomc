@@ -45,8 +45,8 @@ class TodoMvc:
         self.start_editing(todo, new_text).press(submit_by)
         return self
 
-    def cancel_editing(self, todo: str, new_text):
-        self.start_editing(todo, new_text).press(Keys.ESCAPE)
+    def cancel_editing(self, todo, new_text, submit_by=Keys.ESCAPE):
+        self.edit(todo, new_text, submit_by)
         return self
 
     def toggle(self, todo):

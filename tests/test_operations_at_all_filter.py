@@ -54,7 +54,7 @@ def test_cancel_editing():
     app.should_have_items_left(3)
 
 
-def test_delete_by_edit_blank():
+def test_delete_by_edit_to_blank():
     app.given_opened_with('a', 'b', 'c')
 
     app.edit('b', '')
@@ -138,8 +138,3 @@ def test_delete_last_todo():
 
     app.should_have_no_todos()
     app.should_nave_hidden_footer()
-
-
-
-
-
