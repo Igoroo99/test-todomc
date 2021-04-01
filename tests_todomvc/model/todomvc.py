@@ -3,10 +3,6 @@ from selene.support.shared import browser
 from selenium.webdriver.common.keys import Keys
 
 
-be_completed = have.css_class('completed')
-be_active = be_completed.not_
-
-
 class TodoMvc:
     def visit(self):
         browser.open('https://todomvc4tasj.herokuapp.com/')

@@ -18,7 +18,3 @@ def test_common_todo_functionality():
 
     app.delete('c')
     app.should_have('a')
-
-
-
-
